@@ -333,11 +333,21 @@ public class App extends JFrame {
     private void keyClick(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_keyClick
         switch (evt.getKeyCode()) {
             case (KeyEvent.VK_RIGHT) -> {
-                //
+                if (game.verifyTurn('R')) {
+                    incrementScore();
+                    gameUpdate();
+                } else {
+                    gameEnd();
+                }
             }
             case (KeyEvent.VK_LEFT) -> {
-                //
-            } 
+                if (game.verifyTurn('L')) {
+                    incrementScore();
+                    gameUpdate();
+                } else {
+                    gameEnd();
+                }
+            }
         }
     }//GEN-LAST:event_keyClick
     // </editor-fold> 
@@ -385,9 +395,11 @@ public class App extends JFrame {
     
     void gameEnd() {
         
+        topText.setText(String.valueOf(game.getHighest()));
     }
     
     void generateTop() {
+        
         
     }
     
