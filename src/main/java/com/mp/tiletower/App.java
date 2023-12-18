@@ -6,6 +6,9 @@ import javax.swing.*;
 
 public class App extends JFrame {
     
+    final Color clrActive = new Color(204, 214, 220);
+    final Color clrOff = new Color(79, 111, 133);
+    
     Game game = new Game();
     
     // --
