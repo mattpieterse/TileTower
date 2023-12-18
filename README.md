@@ -13,8 +13,6 @@
 
   <p align="center">
     Lightweight Java game using swing components.
-    <br />
-    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/mpiet-za/TileTower>
   </p>
 </div>
 
