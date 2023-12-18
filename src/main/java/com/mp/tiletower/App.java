@@ -5,6 +5,10 @@ import java.awt.*;
 import javax.swing.*;
 
 public class App extends JFrame {
+    
+    Game game = new Game();
+    
+    // --
 
     public App() {
         initComponents();
