@@ -7,15 +7,16 @@ import javax.swing.*;
 
 public class App extends JFrame {
     
-    final Color clrActive = new Color(204, 214, 220);
-    final Color clrOff = new Color(79, 111, 133);
+    static final Color clrActive = new Color(204, 214, 220);
+    static final Color clrOff = new Color(79, 111, 133);
     
-    Game game = new Game();
+    static Game game = new Game();
     
     // --
 
     public App() {
         initComponents();
+        gameStart();
     }
 
     // <editor-fold defaultstate="collapsed" desc="IDE Code">   
@@ -369,6 +370,28 @@ public class App extends JFrame {
         EventQueue.invokeLater(() -> {
             new App().setVisible(true);
         });
+    }
+    
+    // --
+    
+    static void gameStart() {
+        
+    }
+    
+    static void gameUpdate() {
+        
+    }
+    
+    static void gameEnd() {
+        
+    }
+    
+    static void generateTop() {
+        
+    }
+    
+    static void incrementScore() {
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="IDE Variables">   
