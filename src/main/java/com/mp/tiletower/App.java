@@ -2,12 +2,22 @@
 package com.mp.tiletower;
 
 import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
 import javax.swing.*;
 
 public class App extends JFrame {
+    
+    final Color clrActive = new Color(204, 214, 220);
+    final Color clrOff = new Color(79, 111, 133);
+    
+    Game game = new Game();
+    
+    // --
 
     public App() {
         initComponents();
+        onStart();
     }
 
     // <editor-fold defaultstate="collapsed" desc="IDE Code">   
@@ -30,12 +40,17 @@ public class App extends JFrame {
         tileF1 = new javax.swing.JPanel();
         tileF2 = new javax.swing.JPanel();
         panElements = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        scoreText = new javax.swing.JLabel();
+        topText = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("TileTower (0.1.0)");
         setAlwaysOnTop(true);
+        addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                keyClick(evt);
+            }
+        });
 
         panContainer.setBackground(new java.awt.Color(56, 92, 117));
 
@@ -261,21 +276,21 @@ public class App extends JFrame {
         panElements.setOpaque(false);
         panElements.setLayout(new java.awt.GridLayout(2, 2));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 17)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(204, 214, 220));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mp/tiletower/assets/icons8-star-16.png"))); // NOI18N
-        jLabel1.setText("0000");
-        jLabel1.setToolTipText("");
-        jLabel1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        panElements.add(jLabel1);
+        scoreText.setFont(new java.awt.Font("Segoe UI", 1, 17)); // NOI18N
+        scoreText.setForeground(new java.awt.Color(204, 214, 220));
+        scoreText.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        scoreText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mp/tiletower/assets/icons8-star-16.png"))); // NOI18N
+        scoreText.setText("0000");
+        scoreText.setToolTipText("");
+        scoreText.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        panElements.add(scoreText);
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(204, 214, 220));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel2.setText("Highest: 0");
-        jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        panElements.add(jLabel2);
+        topText.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        topText.setForeground(new java.awt.Color(204, 214, 220));
+        topText.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        topText.setText("Highest: 0");
+        topText.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panElements.add(topText);
 
         javax.swing.GroupLayout panContainerLayout = new javax.swing.GroupLayout(panContainer);
         panContainer.setLayout(panContainerLayout);
@@ -315,6 +330,29 @@ public class App extends JFrame {
     }// </editor-fold>//GEN-END:initComponents
     // </editor-fold> 
     
+    // <editor-fold defaultstate="collapsed" desc="Event Listeners"> 
+    private void keyClick(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_keyClick
+        switch (evt.getKeyCode()) {
+            case (KeyEvent.VK_RIGHT) -> {
+                if (game.verifyTurn('R')) {
+                    game.updateScore();
+                    onUpdate();
+                } else {
+                    endGame();
+                }
+            }
+            case (KeyEvent.VK_LEFT) -> {
+                if (game.verifyTurn('L')) {
+                    game.updateScore();
+                    onUpdate();
+                } else {
+                    endGame();
+                }
+            }
+        }
+    }//GEN-LAST:event_keyClick
+    // </editor-fold> 
+    
     public static void main(String args[]) {
         
         //<editor-fold defaultstate="collapsed" desc="UI Skin">
@@ -323,9 +361,9 @@ public class App extends JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-            for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
-                    UIManager.setLookAndFeel(info.getClassName());
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
             }
@@ -339,19 +377,102 @@ public class App extends JFrame {
             java.util.logging.Logger.getLogger(App.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        
+        //</editor-fold>
 
-        EventQueue.invokeLater(() -> {
-            new App().setVisible(true);
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new App().setVisible(true);
+            }
         });
+    }
+    
+    // --
+    
+    void onStart() {
+        
+        game.setScore(0);
+        
+        tileA1.setBackground(clrOff);
+        tileA2.setBackground(clrOff);
+        tileB1.setBackground(clrOff);
+        tileB2.setBackground(clrOff);
+        tileC1.setBackground(clrOff);
+        tileC2.setBackground(clrOff);
+        tileD1.setBackground(clrOff);
+        tileD2.setBackground(clrOff);
+        tileE1.setBackground(clrOff);
+        tileE2.setBackground(clrOff);
+        tileF1.setBackground(clrOff);
+        tileF2.setBackground(clrOff);
+        
+        // Format game states to default states
+        for (int i = 0; i < game.states.length; i++) {
+            for (int j = 0; j < 2; j++) {
+                game.states[i][j] = false;
+            }
+        }
+        
+        generateTop();                  // Generate top row
+        for (int i = 0; i < 6; i++) {   // Fill in all rows
+            onUpdate();                 // Using method
+        }
+    }
+    
+    void onUpdate() {
+        
+        scoreText.setText(String.valueOf(game.getScore()));
+        
+        tileF1.setBackground(tileE1.getBackground());
+        tileF2.setBackground(tileE2.getBackground());
+        tileE1.setBackground(tileD1.getBackground());
+        tileE2.setBackground(tileD2.getBackground());
+        tileD1.setBackground(tileC1.getBackground());
+        tileD2.setBackground(tileC2.getBackground());
+        tileC1.setBackground(tileB1.getBackground());
+        tileC2.setBackground(tileB2.getBackground());
+        tileB1.setBackground(tileA1.getBackground());
+        tileB2.setBackground(tileA2.getBackground());
+        
+        for (int i = 5; i > 0; i--) {
+            for (int j = 0; j <= 1; j++) {
+                int previous = i - 1;
+                game.states[i][j] = game.states[previous][j];
+            }
+        }
+        
+        generateTop();
+    }
+    
+    void endGame() {
+        
+        scoreText.setText(String.valueOf(game.getScore()));
+        topText.setText(String.valueOf(game.getHighest()));
+    }
+    
+    void generateTop() {
+        switch (new Random().nextInt() % 2) {
+            case (0) -> {
+                tileA1.setBackground(clrActive);
+                game.states[0][0] = true;
+                tileA1.setBackground(clrOff);
+                game.states[0][1] = false;
+            }
+            case (1) -> {
+                tileA2.setBackground(clrActive);
+                game.states[0][1] = true;
+                tileA2.setBackground(clrOff);
+                game.states[0][0] = false;
+            }
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="IDE Variables">   
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel panContainer;
     private javax.swing.JPanel panElements;
     private javax.swing.JPanel panGame;
+    private javax.swing.JLabel scoreText;
     private javax.swing.JPanel tileA1;
     private javax.swing.JPanel tileA2;
     private javax.swing.JPanel tileB1;
@@ -364,6 +485,7 @@ public class App extends JFrame {
     private javax.swing.JPanel tileE2;
     private javax.swing.JPanel tileF1;
     private javax.swing.JPanel tileF2;
+    private javax.swing.JLabel topText;
     // End of variables declaration//GEN-END:variables
     // </editor-fold> 
 }
