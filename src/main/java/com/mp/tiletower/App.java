@@ -361,9 +361,9 @@ public class App extends JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-            for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
-                    UIManager.setLookAndFeel(info.getClassName());
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
             }
@@ -377,9 +377,13 @@ public class App extends JFrame {
             java.util.logging.Logger.getLogger(App.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        
+        //</editor-fold>
 
-        EventQueue.invokeLater(() -> {
-            new App().setVisible(true);
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new App().setVisible(true);
+            }
         });
     }
     
@@ -402,7 +406,7 @@ public class App extends JFrame {
         tileF1.setBackground(clrOff);
         tileF2.setBackground(clrOff);
         
-        // Format game state to default states
+        // Format game states to default states
         for (int i = 0; i < game.states.length; i++) {
             for (int j = 0; j < 2; j++) {
                 game.states[i][j] = false;
@@ -418,6 +422,26 @@ public class App extends JFrame {
     void onUpdate() {
         
         scoreText.setText(String.valueOf(game.getScore()));
+        
+        tileF1.setBackground(tileE1.getBackground());
+        tileF2.setBackground(tileE2.getBackground());
+        tileE1.setBackground(tileD1.getBackground());
+        tileE2.setBackground(tileD2.getBackground());
+        tileD1.setBackground(tileC1.getBackground());
+        tileD2.setBackground(tileC2.getBackground());
+        tileC1.setBackground(tileB1.getBackground());
+        tileC2.setBackground(tileB2.getBackground());
+        tileB1.setBackground(tileA1.getBackground());
+        tileB2.setBackground(tileA2.getBackground());
+        
+        for (int i = 5; i > 0; i--) {
+            for (int j = 0; j <= 1; j++) {
+                int previous = i - 1;
+                game.states[i][j] = game.states[previous][j];
+            }
+        }
+        
+        generateTop();
     }
     
     void endGame() {
