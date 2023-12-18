@@ -40,6 +40,7 @@ public class App extends javax.swing.JFrame {
         panGame.setLayout(new java.awt.GridLayout(6, 2, 6, 6));
 
         tileA1.setBackground(new java.awt.Color(79, 111, 133));
+        tileA1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(131, 154, 169), 2, true));
         tileA1.setMinimumSize(new java.awt.Dimension(100, 60));
         tileA1.setPreferredSize(new java.awt.Dimension(340, 60));
 
@@ -47,16 +48,17 @@ public class App extends javax.swing.JFrame {
         tileA1.setLayout(tileA1Layout);
         tileA1Layout.setHorizontalGroup(
             tileA1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 161, Short.MAX_VALUE)
+            .addGap(0, 157, Short.MAX_VALUE)
         );
         tileA1Layout.setVerticalGroup(
             tileA1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 60, Short.MAX_VALUE)
+            .addGap(0, 56, Short.MAX_VALUE)
         );
 
         panGame.add(tileA1);
 
         tileA2.setBackground(new java.awt.Color(79, 111, 133));
+        tileA2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(131, 154, 169), 2, true));
         tileA2.setMinimumSize(new java.awt.Dimension(100, 60));
         tileA2.setPreferredSize(new java.awt.Dimension(340, 60));
 
@@ -64,16 +66,17 @@ public class App extends javax.swing.JFrame {
         tileA2.setLayout(tileA2Layout);
         tileA2Layout.setHorizontalGroup(
             tileA2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 161, Short.MAX_VALUE)
+            .addGap(0, 157, Short.MAX_VALUE)
         );
         tileA2Layout.setVerticalGroup(
             tileA2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 60, Short.MAX_VALUE)
+            .addGap(0, 56, Short.MAX_VALUE)
         );
 
         panGame.add(tileA2);
 
         tileB1.setBackground(new java.awt.Color(79, 111, 133));
+        tileB1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(131, 154, 169), 2, true));
         tileB1.setMinimumSize(new java.awt.Dimension(100, 60));
         tileB1.setPreferredSize(new java.awt.Dimension(340, 60));
 
@@ -81,16 +84,17 @@ public class App extends javax.swing.JFrame {
         tileB1.setLayout(tileB1Layout);
         tileB1Layout.setHorizontalGroup(
             tileB1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 161, Short.MAX_VALUE)
+            .addGap(0, 157, Short.MAX_VALUE)
         );
         tileB1Layout.setVerticalGroup(
             tileB1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 60, Short.MAX_VALUE)
+            .addGap(0, 56, Short.MAX_VALUE)
         );
 
         panGame.add(tileB1);
 
         tileB2.setBackground(new java.awt.Color(79, 111, 133));
+        tileB2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(131, 154, 169), 2, true));
         tileB2.setMinimumSize(new java.awt.Dimension(100, 60));
         tileB2.setPreferredSize(new java.awt.Dimension(340, 60));
 
@@ -98,16 +102,17 @@ public class App extends javax.swing.JFrame {
         tileB2.setLayout(tileB2Layout);
         tileB2Layout.setHorizontalGroup(
             tileB2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 161, Short.MAX_VALUE)
+            .addGap(0, 157, Short.MAX_VALUE)
         );
         tileB2Layout.setVerticalGroup(
             tileB2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 60, Short.MAX_VALUE)
+            .addGap(0, 56, Short.MAX_VALUE)
         );
 
         panGame.add(tileB2);
 
         tileC1.setBackground(new java.awt.Color(79, 111, 133));
+        tileC1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(131, 154, 169), 2, true));
         tileC1.setMinimumSize(new java.awt.Dimension(100, 60));
         tileC1.setPreferredSize(new java.awt.Dimension(340, 60));
 
@@ -115,16 +120,17 @@ public class App extends javax.swing.JFrame {
         tileC1.setLayout(tileC1Layout);
         tileC1Layout.setHorizontalGroup(
             tileC1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 161, Short.MAX_VALUE)
+            .addGap(0, 157, Short.MAX_VALUE)
         );
         tileC1Layout.setVerticalGroup(
             tileC1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 60, Short.MAX_VALUE)
+            .addGap(0, 56, Short.MAX_VALUE)
         );
 
         panGame.add(tileC1);
 
         tileC2.setBackground(new java.awt.Color(79, 111, 133));
+        tileC2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(131, 154, 169), 2, true));
         tileC2.setMinimumSize(new java.awt.Dimension(100, 60));
         tileC2.setPreferredSize(new java.awt.Dimension(340, 60));
 
@@ -132,16 +138,17 @@ public class App extends javax.swing.JFrame {
         tileC2.setLayout(tileC2Layout);
         tileC2Layout.setHorizontalGroup(
             tileC2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 161, Short.MAX_VALUE)
+            .addGap(0, 157, Short.MAX_VALUE)
         );
         tileC2Layout.setVerticalGroup(
             tileC2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 60, Short.MAX_VALUE)
+            .addGap(0, 56, Short.MAX_VALUE)
         );
 
         panGame.add(tileC2);
 
         tileD1.setBackground(new java.awt.Color(79, 111, 133));
+        tileD1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(131, 154, 169), 2, true));
         tileD1.setMinimumSize(new java.awt.Dimension(100, 60));
         tileD1.setPreferredSize(new java.awt.Dimension(340, 60));
 
@@ -149,16 +156,17 @@ public class App extends javax.swing.JFrame {
         tileD1.setLayout(tileD1Layout);
         tileD1Layout.setHorizontalGroup(
             tileD1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 161, Short.MAX_VALUE)
+            .addGap(0, 157, Short.MAX_VALUE)
         );
         tileD1Layout.setVerticalGroup(
             tileD1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 60, Short.MAX_VALUE)
+            .addGap(0, 56, Short.MAX_VALUE)
         );
 
         panGame.add(tileD1);
 
         tileD2.setBackground(new java.awt.Color(79, 111, 133));
+        tileD2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(131, 154, 169), 2, true));
         tileD2.setMinimumSize(new java.awt.Dimension(100, 60));
         tileD2.setPreferredSize(new java.awt.Dimension(340, 60));
 
@@ -166,16 +174,17 @@ public class App extends javax.swing.JFrame {
         tileD2.setLayout(tileD2Layout);
         tileD2Layout.setHorizontalGroup(
             tileD2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 161, Short.MAX_VALUE)
+            .addGap(0, 157, Short.MAX_VALUE)
         );
         tileD2Layout.setVerticalGroup(
             tileD2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 60, Short.MAX_VALUE)
+            .addGap(0, 56, Short.MAX_VALUE)
         );
 
         panGame.add(tileD2);
 
         tileE1.setBackground(new java.awt.Color(79, 111, 133));
+        tileE1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(131, 154, 169), 2, true));
         tileE1.setMinimumSize(new java.awt.Dimension(100, 60));
         tileE1.setPreferredSize(new java.awt.Dimension(340, 60));
 
@@ -183,16 +192,17 @@ public class App extends javax.swing.JFrame {
         tileE1.setLayout(tileE1Layout);
         tileE1Layout.setHorizontalGroup(
             tileE1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 161, Short.MAX_VALUE)
+            .addGap(0, 157, Short.MAX_VALUE)
         );
         tileE1Layout.setVerticalGroup(
             tileE1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 60, Short.MAX_VALUE)
+            .addGap(0, 56, Short.MAX_VALUE)
         );
 
         panGame.add(tileE1);
 
         tileE2.setBackground(new java.awt.Color(79, 111, 133));
+        tileE2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(131, 154, 169), 2, true));
         tileE2.setMinimumSize(new java.awt.Dimension(100, 60));
         tileE2.setPreferredSize(new java.awt.Dimension(340, 60));
 
@@ -200,16 +210,17 @@ public class App extends javax.swing.JFrame {
         tileE2.setLayout(tileE2Layout);
         tileE2Layout.setHorizontalGroup(
             tileE2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 161, Short.MAX_VALUE)
+            .addGap(0, 157, Short.MAX_VALUE)
         );
         tileE2Layout.setVerticalGroup(
             tileE2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 60, Short.MAX_VALUE)
+            .addGap(0, 56, Short.MAX_VALUE)
         );
 
         panGame.add(tileE2);
 
         tileF1.setBackground(new java.awt.Color(79, 111, 133));
+        tileF1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(131, 154, 169), 2, true));
         tileF1.setMinimumSize(new java.awt.Dimension(100, 60));
         tileF1.setPreferredSize(new java.awt.Dimension(340, 60));
 
@@ -217,16 +228,17 @@ public class App extends javax.swing.JFrame {
         tileF1.setLayout(tileF1Layout);
         tileF1Layout.setHorizontalGroup(
             tileF1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 161, Short.MAX_VALUE)
+            .addGap(0, 157, Short.MAX_VALUE)
         );
         tileF1Layout.setVerticalGroup(
             tileF1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 60, Short.MAX_VALUE)
+            .addGap(0, 56, Short.MAX_VALUE)
         );
 
         panGame.add(tileF1);
 
         tileF2.setBackground(new java.awt.Color(79, 111, 133));
+        tileF2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(131, 154, 169), 2, true));
         tileF2.setMinimumSize(new java.awt.Dimension(100, 60));
         tileF2.setPreferredSize(new java.awt.Dimension(340, 60));
 
@@ -234,11 +246,11 @@ public class App extends javax.swing.JFrame {
         tileF2.setLayout(tileF2Layout);
         tileF2Layout.setHorizontalGroup(
             tileF2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 161, Short.MAX_VALUE)
+            .addGap(0, 157, Short.MAX_VALUE)
         );
         tileF2Layout.setVerticalGroup(
             tileF2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 60, Short.MAX_VALUE)
+            .addGap(0, 56, Short.MAX_VALUE)
         );
 
         panGame.add(tileF2);
