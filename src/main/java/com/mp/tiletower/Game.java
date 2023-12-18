@@ -39,4 +39,8 @@ public class Game {
     public int getHighest() {
         return highest;
     }
+    
+    public void setScore(int argv) {
+        this.score = argv;
+    }
 }
