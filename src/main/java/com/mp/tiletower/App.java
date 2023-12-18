@@ -16,7 +16,7 @@ public class App extends JFrame {
 
     public App() {
         initComponents();
-        gameStart();
+        onStart();
     }
 
     // <editor-fold defaultstate="collapsed" desc="IDE Code">   
@@ -335,17 +335,17 @@ public class App extends JFrame {
             case (KeyEvent.VK_RIGHT) -> {
                 if (game.verifyTurn('R')) {
                     game.incrementScore();
-                    gameUpdate();
+                    onUpdate();
                 } else {
-                    gameEnd();
+                    endGame();
                 }
             }
             case (KeyEvent.VK_LEFT) -> {
                 if (game.verifyTurn('L')) {
                     game.incrementScore();
-                    gameUpdate();
+                    onUpdate();
                 } else {
-                    gameEnd();
+                    endGame();
                 }
             }
         }
@@ -384,16 +384,16 @@ public class App extends JFrame {
     
     // --
     
-    void gameStart() {
+    void onStart() {
         
     }
     
-    void gameUpdate() {
+    void onUpdate() {
         
         scoreText.setText(String.valueOf(game.getScore()));
     }
     
-    void gameEnd() {
+    void endGame() {
         
         topText.setText(String.valueOf(game.getHighest()));
     }
