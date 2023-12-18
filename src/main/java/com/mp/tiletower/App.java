@@ -2,6 +2,7 @@
 package com.mp.tiletower;
 
 import java.awt.*;
+import java.awt.event.*;
 import javax.swing.*;
 
 public class App extends JFrame {
@@ -43,6 +44,11 @@ public class App extends JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("TileTower (0.1.0)");
         setAlwaysOnTop(true);
+        addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                keyClick(evt);
+            }
+        });
 
         panContainer.setBackground(new java.awt.Color(56, 92, 117));
 
@@ -320,6 +326,12 @@ public class App extends JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+    // </editor-fold> 
+    
+    // <editor-fold defaultstate="collapsed" desc="Event Listeners"> 
+    private void keyClick(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_keyClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_keyClick
     // </editor-fold> 
     
     public static void main(String args[]) {
