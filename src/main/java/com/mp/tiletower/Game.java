@@ -16,7 +16,9 @@ public class Game {
     
     // --
     
-    boolean verifyTurn() {
+    boolean verifyTurn(char side) {
+        if (side == 'L') return this.states[4][0] == true;
+        if (side == 'R') return this.states[4][1] == true;
         return false;
     }
 }
