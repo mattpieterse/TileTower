@@ -9,7 +9,7 @@
     <img src="https://avatars.githubusercontent.com/u/63480247?v=4" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">TileTower</h3>
+<h2 align="center">TileTower</h2
 
   <p align="center">
     Lightweight Java game using swing components.
@@ -27,9 +27,9 @@ You can also simply open an issue with the enhancement tag.
 Also, don't forget to give the project a star!
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+2. Create your Feature Branch (`git checkout -b topic/YourFeature`)
+3. Commit your Changes (`git commit -m 'Add some useful feature'`)
+4. Push to the Branch (`git push origin topic/YourFeature`)
 5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">Top</a>)</p>
