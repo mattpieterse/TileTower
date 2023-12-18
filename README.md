@@ -16,6 +16,20 @@
   </p>
 </div>
 
+<!-- INFORMATION -->
+
+## About
+
+Use your left and right arrow keys to defend yourself against the never ending onlaught of cascading tiles!
+
+**Extra technical information**
+
+*This project was developed with the Java programming language using a Maven configuration. All graphical user interface (GUI) components are drawn using
+the native swing libraries. This codebase is best interacted with using the NetBeans IDE, as this is the development environment that has been used to
+create the project, and contains proprietary code snippets.*
+
+<p align="right">(<a href="#readme-top">Top</a>)</p>
+
 <!-- CONTRIBUTING -->
 
 ## Contributing
@@ -33,6 +47,8 @@ Also, don't forget to give the project a star!
 5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">Top</a>)</p>
+
+<!-- LICENSE -->
 
 ## License
 
