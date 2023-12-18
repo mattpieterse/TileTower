@@ -9,10 +9,12 @@
     <img src="https://avatars.githubusercontent.com/u/63480247?v=4" alt="Logo" width="80" height="80">
   </a>
 
-<h2 align="center">TileTower</h2
+<h3 align="center">TileTower</h3>
 
   <p align="center">
     Lightweight Java game using swing components.
+    <br />
+    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/mpiet-za/TileTower>
   </p>
 </div>
 
