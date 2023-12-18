@@ -4,7 +4,7 @@ package com.mp.tiletower;
 import java.awt.*;
 import javax.swing.*;
 
-public class App extends javax.swing.JFrame {
+public class App extends JFrame {
 
     public App() {
         initComponents();
