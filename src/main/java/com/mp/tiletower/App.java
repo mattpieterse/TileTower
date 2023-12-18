@@ -3,6 +3,7 @@ package com.mp.tiletower;
 
 import java.awt.*;
 import java.awt.event.*;
+import java.util.*;
 import javax.swing.*;
 
 public class App extends JFrame {
@@ -395,12 +396,25 @@ public class App extends JFrame {
     
     void endGame() {
         
+        scoreText.setText(String.valueOf(game.getScore()));
         topText.setText(String.valueOf(game.getHighest()));
     }
     
     void generateTop() {
-        
-        
+        switch (new Random().nextInt() % 2) {
+            case (0) -> {
+                tileA1.setBackground(clrActive);
+                game.states[0][0] = true;
+                tileA1.setBackground(clrOff);
+                game.states[0][1] = false;
+            }
+            case (1) -> {
+                tileA2.setBackground(clrActive);
+                game.states[0][1] = true;
+                tileA2.setBackground(clrOff);
+                game.states[0][0] = false;
+            }
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="IDE Variables">   

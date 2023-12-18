@@ -6,7 +6,7 @@ public class Game {
     private static int highest = 0;
     
     private int score = 0;
-    private boolean[][] states = {
+    boolean[][] states = {
         {false, false},
         {false, false},
         {false, false},
