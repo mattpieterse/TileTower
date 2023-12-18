@@ -387,6 +387,32 @@ public class App extends JFrame {
     
     void onStart() {
         
+        game.setScore(0);
+        
+        tileA1.setBackground(clrOff);
+        tileA2.setBackground(clrOff);
+        tileB1.setBackground(clrOff);
+        tileB2.setBackground(clrOff);
+        tileC1.setBackground(clrOff);
+        tileC2.setBackground(clrOff);
+        tileD1.setBackground(clrOff);
+        tileD2.setBackground(clrOff);
+        tileE1.setBackground(clrOff);
+        tileE2.setBackground(clrOff);
+        tileF1.setBackground(clrOff);
+        tileF2.setBackground(clrOff);
+        
+        // Format game state to default states
+        for (int i = 0; i < game.states.length; i++) {
+            for (int j = 0; j < 2; j++) {
+                game.states[i][j] = false;
+            }
+        }
+        
+        generateTop();                  // Generate top row
+        for (int i = 0; i < 6; i++) {   // Fill in all rows
+            onUpdate();                 // Using method
+        }
     }
     
     void onUpdate() {
