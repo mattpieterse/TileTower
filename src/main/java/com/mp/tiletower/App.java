@@ -330,7 +330,14 @@ public class App extends JFrame {
     
     // <editor-fold defaultstate="collapsed" desc="Event Listeners"> 
     private void keyClick(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_keyClick
-        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+            case (KeyEvent.VK_RIGHT) -> {
+                //
+            }
+            case (KeyEvent.VK_LEFT) -> {
+                //
+            } 
+        }
     }//GEN-LAST:event_keyClick
     // </editor-fold> 
     
