@@ -23,7 +23,7 @@
 Use your left and right arrow keys to defend yourself against the never ending onlaught of cascading tiles!
 
 Albeit simple, the completion of this project coincides with the completion of one of my childhood dreams. In my primary school days, I would often find
-myself spending hours whirring around a mobile scratch-like development tool, passionately creating applications and games of all kinds. This is one of
+myself spending hours whirring around a mobile scratch-like development tool, passionately creating games of all kinds. This is one of
 those projects reimagined and brought to life.
 
 *This project was developed with the Java programming language using a Maven configuration. All graphical user interface (GUI) components are drawn using
