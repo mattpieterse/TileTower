@@ -7,10 +7,10 @@ import javax.swing.*;
 
 public class App extends JFrame {
     
-    static final Color clrActive = new Color(204, 214, 220);
-    static final Color clrOff = new Color(79, 111, 133);
+    final Color clrActive = new Color(204, 214, 220);
+    final Color clrOff = new Color(79, 111, 133);
     
-    static Game game = new Game();
+    Game game = new Game();
     
     // --
 
@@ -39,8 +39,8 @@ public class App extends JFrame {
         tileF1 = new javax.swing.JPanel();
         tileF2 = new javax.swing.JPanel();
         panElements = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        scoreText = new javax.swing.JLabel();
+        topText = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("TileTower (0.1.0)");
@@ -275,21 +275,21 @@ public class App extends JFrame {
         panElements.setOpaque(false);
         panElements.setLayout(new java.awt.GridLayout(2, 2));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 17)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(204, 214, 220));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mp/tiletower/assets/icons8-star-16.png"))); // NOI18N
-        jLabel1.setText("0000");
-        jLabel1.setToolTipText("");
-        jLabel1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        panElements.add(jLabel1);
+        scoreText.setFont(new java.awt.Font("Segoe UI", 1, 17)); // NOI18N
+        scoreText.setForeground(new java.awt.Color(204, 214, 220));
+        scoreText.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        scoreText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mp/tiletower/assets/icons8-star-16.png"))); // NOI18N
+        scoreText.setText("0000");
+        scoreText.setToolTipText("");
+        scoreText.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        panElements.add(scoreText);
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(204, 214, 220));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel2.setText("Highest: 0");
-        jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        panElements.add(jLabel2);
+        topText.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        topText.setForeground(new java.awt.Color(204, 214, 220));
+        topText.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        topText.setText("Highest: 0");
+        topText.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panElements.add(topText);
 
         javax.swing.GroupLayout panContainerLayout = new javax.swing.GroupLayout(panContainer);
         panContainer.setLayout(panContainerLayout);
@@ -374,33 +374,33 @@ public class App extends JFrame {
     
     // --
     
-    static void gameStart() {
+    void gameStart() {
         
     }
     
-    static void gameUpdate() {
+    void gameUpdate() {
+        
+        scoreText.setText(String.valueOf(game.getScore()));
+    }
+    
+    void gameEnd() {
         
     }
     
-    static void gameEnd() {
+    void generateTop() {
         
     }
     
-    static void generateTop() {
-        
-    }
-    
-    static void incrementScore() {
+    void incrementScore() {
         
     }
 
     // <editor-fold defaultstate="collapsed" desc="IDE Variables">   
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel panContainer;
     private javax.swing.JPanel panElements;
     private javax.swing.JPanel panGame;
+    private javax.swing.JLabel scoreText;
     private javax.swing.JPanel tileA1;
     private javax.swing.JPanel tileA2;
     private javax.swing.JPanel tileB1;
@@ -413,6 +413,7 @@ public class App extends JFrame {
     private javax.swing.JPanel tileE2;
     private javax.swing.JPanel tileF1;
     private javax.swing.JPanel tileF2;
+    private javax.swing.JLabel topText;
     // End of variables declaration//GEN-END:variables
     // </editor-fold> 
 }
