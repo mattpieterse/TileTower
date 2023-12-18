@@ -22,7 +22,11 @@ public class Game {
         return false;
     }
     
-    void incrementScore() {
+    void updateHighest() {
+        highest = this.score;
+    }
+    
+    void updateScore() {
         this.score++;
     }
     

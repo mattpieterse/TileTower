@@ -334,7 +334,7 @@ public class App extends JFrame {
         switch (evt.getKeyCode()) {
             case (KeyEvent.VK_RIGHT) -> {
                 if (game.verifyTurn('R')) {
-                    game.incrementScore();
+                    game.updateScore();
                     onUpdate();
                 } else {
                     endGame();
@@ -342,7 +342,7 @@ public class App extends JFrame {
             }
             case (KeyEvent.VK_LEFT) -> {
                 if (game.verifyTurn('L')) {
-                    game.incrementScore();
+                    game.updateScore();
                     onUpdate();
                 } else {
                     endGame();
