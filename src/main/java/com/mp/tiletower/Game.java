@@ -22,9 +22,17 @@ public class Game {
         return false;
     }
     
+    void incrementScore() {
+        this.score++;
+    }
+    
     // --
     
     public int getScore() {
         return this.score;
+    }
+    
+    public int getHighest() {
+        return highest;
     }
 }
