@@ -3,10 +3,10 @@ package com.mp.tiletower;
 
 public class Game {
     
-    static int highest = 0;
+    private static int highest = 0;
     
-    int score = 0;
-    boolean[][] states = {
+    private int score = 0;
+    private boolean[][] states = {
         {false, false},
         {false, false},
         {false, false},
@@ -17,8 +17,14 @@ public class Game {
     // --
     
     boolean verifyTurn(char side) {
-        if (side == 'L') return this.states[4][0] == true;
-        if (side == 'R') return this.states[4][1] == true;
+        if (side == 'L') return this.states[5][0] == true;
+        if (side == 'R') return this.states[5][1] == true;
         return false;
+    }
+    
+    // --
+    
+    public int getScore() {
+        return this.score;
     }
 }
