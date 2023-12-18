@@ -30,6 +30,8 @@ public class App extends javax.swing.JFrame {
         tileF1 = new javax.swing.JPanel();
         tileF2 = new javax.swing.JPanel();
         panElements = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("TileTower (0.1.0)");
@@ -49,7 +51,7 @@ public class App extends javax.swing.JFrame {
         tileA1.setLayout(tileA1Layout);
         tileA1Layout.setHorizontalGroup(
             tileA1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 147, Short.MAX_VALUE)
+            .addGap(0, 155, Short.MAX_VALUE)
         );
         tileA1Layout.setVerticalGroup(
             tileA1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -67,7 +69,7 @@ public class App extends javax.swing.JFrame {
         tileA2.setLayout(tileA2Layout);
         tileA2Layout.setHorizontalGroup(
             tileA2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 147, Short.MAX_VALUE)
+            .addGap(0, 155, Short.MAX_VALUE)
         );
         tileA2Layout.setVerticalGroup(
             tileA2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -85,7 +87,7 @@ public class App extends javax.swing.JFrame {
         tileB1.setLayout(tileB1Layout);
         tileB1Layout.setHorizontalGroup(
             tileB1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 147, Short.MAX_VALUE)
+            .addGap(0, 155, Short.MAX_VALUE)
         );
         tileB1Layout.setVerticalGroup(
             tileB1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -103,7 +105,7 @@ public class App extends javax.swing.JFrame {
         tileB2.setLayout(tileB2Layout);
         tileB2Layout.setHorizontalGroup(
             tileB2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 147, Short.MAX_VALUE)
+            .addGap(0, 155, Short.MAX_VALUE)
         );
         tileB2Layout.setVerticalGroup(
             tileB2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -121,7 +123,7 @@ public class App extends javax.swing.JFrame {
         tileC1.setLayout(tileC1Layout);
         tileC1Layout.setHorizontalGroup(
             tileC1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 147, Short.MAX_VALUE)
+            .addGap(0, 155, Short.MAX_VALUE)
         );
         tileC1Layout.setVerticalGroup(
             tileC1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -139,7 +141,7 @@ public class App extends javax.swing.JFrame {
         tileC2.setLayout(tileC2Layout);
         tileC2Layout.setHorizontalGroup(
             tileC2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 147, Short.MAX_VALUE)
+            .addGap(0, 155, Short.MAX_VALUE)
         );
         tileC2Layout.setVerticalGroup(
             tileC2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -157,7 +159,7 @@ public class App extends javax.swing.JFrame {
         tileD1.setLayout(tileD1Layout);
         tileD1Layout.setHorizontalGroup(
             tileD1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 147, Short.MAX_VALUE)
+            .addGap(0, 155, Short.MAX_VALUE)
         );
         tileD1Layout.setVerticalGroup(
             tileD1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -175,7 +177,7 @@ public class App extends javax.swing.JFrame {
         tileD2.setLayout(tileD2Layout);
         tileD2Layout.setHorizontalGroup(
             tileD2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 147, Short.MAX_VALUE)
+            .addGap(0, 155, Short.MAX_VALUE)
         );
         tileD2Layout.setVerticalGroup(
             tileD2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -193,7 +195,7 @@ public class App extends javax.swing.JFrame {
         tileE1.setLayout(tileE1Layout);
         tileE1Layout.setHorizontalGroup(
             tileE1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 147, Short.MAX_VALUE)
+            .addGap(0, 155, Short.MAX_VALUE)
         );
         tileE1Layout.setVerticalGroup(
             tileE1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -211,7 +213,7 @@ public class App extends javax.swing.JFrame {
         tileE2.setLayout(tileE2Layout);
         tileE2Layout.setHorizontalGroup(
             tileE2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 147, Short.MAX_VALUE)
+            .addGap(0, 155, Short.MAX_VALUE)
         );
         tileE2Layout.setVerticalGroup(
             tileE2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -229,7 +231,7 @@ public class App extends javax.swing.JFrame {
         tileF1.setLayout(tileF1Layout);
         tileF1Layout.setHorizontalGroup(
             tileF1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 147, Short.MAX_VALUE)
+            .addGap(0, 155, Short.MAX_VALUE)
         );
         tileF1Layout.setVerticalGroup(
             tileF1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -247,7 +249,7 @@ public class App extends javax.swing.JFrame {
         tileF2.setLayout(tileF2Layout);
         tileF2Layout.setHorizontalGroup(
             tileF2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 147, Short.MAX_VALUE)
+            .addGap(0, 155, Short.MAX_VALUE)
         );
         tileF2Layout.setVerticalGroup(
             tileF2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -256,35 +258,45 @@ public class App extends javax.swing.JFrame {
 
         panGame.add(tileF2);
 
-        javax.swing.GroupLayout panElementsLayout = new javax.swing.GroupLayout(panElements);
-        panElements.setLayout(panElementsLayout);
-        panElementsLayout.setHorizontalGroup(
-            panElementsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 308, Short.MAX_VALUE)
-        );
-        panElementsLayout.setVerticalGroup(
-            panElementsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 52, Short.MAX_VALUE)
-        );
+        panElements.setOpaque(false);
+        panElements.setLayout(new java.awt.GridLayout(2, 2));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 17)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 214, 220));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mp/tiletower/assets/icons8-star-16.png"))); // NOI18N
+        jLabel1.setText("0000");
+        jLabel1.setToolTipText("");
+        jLabel1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        panElements.add(jLabel1);
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 214, 220));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel2.setText("Highest: 0");
+        jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panElements.add(jLabel2);
 
         javax.swing.GroupLayout panContainerLayout = new javax.swing.GroupLayout(panContainer);
         panContainer.setLayout(panContainerLayout);
         panContainerLayout.setHorizontalGroup(
             panContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panContainerLayout.createSequentialGroup()
+            .addGroup(panContainerLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(panContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(panElements, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panGame, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addComponent(panGame, javax.swing.GroupLayout.DEFAULT_SIZE, 324, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(panContainerLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(panElements, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panContainerLayout.setVerticalGroup(
             panContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panContainerLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panElements, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panElements, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panGame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(panGame, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -335,6 +347,8 @@ public class App extends javax.swing.JFrame {
 
     // <editor-fold defaultstate="collapsed" desc="IDE Variables">   
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel panContainer;
     private javax.swing.JPanel panElements;
     private javax.swing.JPanel panGame;
